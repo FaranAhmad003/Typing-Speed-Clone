@@ -1,0 +1,108 @@
+body {
+    text-align: center;
+    background-color: #121212;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.word-container {
+    position: relative;
+    display: inline-block;
+}
+
+.default {
+    color: grey;
+    /*border-bottom: 1px solid black;*/
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+
+#user-input {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+
+#typing-test {
+    margin: 5rem 5rem;
+}
+
+.current-word {
+    text-decoration: underline;
+    text-decoration-color: black;
+    animation: blink-underline 1s step-start 0s infinite;
+}
+  
+  h1 {
+    color: #4caf50;
+    font-size: 2em;
+  }
+  
+  #timer, #durationSelect, .word-container, #user-input {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #333333;
+  }
+  #timer{
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  
+  .word-container {
+    background-color: #262626;
+    border-radius: 30px;
+  }
+  
+  #start-button, #reset-button, #change-text {
+    background-color: #ff5722;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #start-button:hover {
+    background-color: #e64a19;
+  }
+  
+  p {
+    font-size: 1em;
+  }
+  
+  #typing-test {
+    min-height: 100px; /* Adjust as per your layout */
+  }
+  
+  #user-input {
+    width: 100%;
+    margin-top: 10px;
+  }
+  #username {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+#input-container{
+  padding-bottom: 20px;
+}
+#username:hover {
+  color:  #333333;
+}
+  @keyframes blink-underline {
+    50% {
+      text-decoration-color: transparent;
+    }
+  }
